@@ -1,0 +1,10 @@
+@import "variables";
+
+.footer-content {
+  color: $color_white;
+  background-color: $color_primary;
+  
+  .footer-wrapper {
+    padding: 1.25rem;
+  }
+}

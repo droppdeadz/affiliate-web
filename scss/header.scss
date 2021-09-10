@@ -1,0 +1,47 @@
+@import "variables";
+
+.header-content {
+  font-family: 'sukhumvit_set', sans-serif;
+  color: $color_white;
+  background-color: $color_primary;
+
+  .header-wrapper {
+    padding: 1.25rem 0;
+  }
+
+  .nav-item {
+    margin: 0 0.5rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .nav-link {
+    color: transparentize($color_white, 0.25) !important;
+
+    &:hover,
+    &.active {
+      color: $color_white !important;
+    }
+  }
+
+  @media (min-width: $desktop-md) {
+    .nav-item {
+      margin: 0 1.25rem;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.navbar-brand {
+  max-width: 8.75rem;
+  margin-right: 1.375rem;
+
+  img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,73 @@
+@import 'fonts';
+@import 'header';
+@import 'footer';
+@import 'buttons';
+
+html {
+  height: 100%;
+  min-height: 100%;
+  font-size: $font-base-size + px;
+}
+
+body {
+  font-family: 'sukhumvit_set', sans-serif;
+  font-size: rem($font-base-size);
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  word-wrap: break-word;
+  @media only screen and (max-width: $mobile-md) {
+    font-size: rem(14);
+  }
+}
+
+main {
+  flex: 1 0 auto;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+strong,
+label,
+b {
+  font-weight: bold;
+}
+
+*:focus {
+  outline: none !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  transition: background-color 5000000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff !important;
+}
+
+// ::-webkit-scrollbar {
+//   width: 7.5px;
+//   height: 7.5px;
+// }
+
+// ::-webkit-scrollbar-track {
+//   background: $scroll_bar_track;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   background: $scroll_bar_thumb;
+//   border-radius: 0;
+// }
+
+// ::-webkit-scrollbar-thumb:hover {
+//   background: darken($scroll_bar_thumb, 5);
+// }
