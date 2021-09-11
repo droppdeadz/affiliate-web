@@ -4,6 +4,7 @@
 @import 'footer';
 @import 'buttons';
 @import 'faq';
+@import 'slick';
 
 html {
   height: 100%;
@@ -249,7 +250,7 @@ select:-webkit-autofill:focus {
     border-radius: 10px !important;
     border: 0;
     box-shadow: none;
-    min-height: 66px;
+    min-height: 84px;
 
     &:not(.collapsed) {
       color: $color_primary_dark;
