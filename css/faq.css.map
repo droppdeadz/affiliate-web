@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"faq.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/faq.scss","../scss/_variables.scss"],"names":[],"mappings":"AAEA,SACE,8BACA,cAEA,mBACE,OACA,eACA,MCCiB,yBALP,KDMV,mBACA,uCACA,cACA,eAEA,+BACE,cAGF,8BACE,eAGF,0BACE,MCvBe,QD0BjB,qBACE","file":"faq.css"}
