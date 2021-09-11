@@ -3,8 +3,13 @@
 .footer-content {
   color: $color_white;
   background-color: $color_primary;
+
   
   .footer-wrapper {
     padding: 20px;
+    
+    @media (max-width: $mobile-md) {
+      height: 70px;
+    }
   }
 }

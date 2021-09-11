@@ -19,9 +19,14 @@ body {
   flex-direction: column;
   min-height: 100vh;
   word-wrap: break-word;
+  background-color: $color_white;
 
-  @media only screen and (max-width: $mobile-md) {
-    font-size: 12px;
+  // @media only screen and (max-width: $mobile-md) {
+  //   font-size: 12px;
+  // }
+
+  &.hide-scroll {
+    overflow: hidden;
   }
 }
 
@@ -45,6 +50,7 @@ b {
 p,
 span {
   font-weight: 500;
+  margin: 0;
 }
 
 h1,
@@ -207,6 +213,27 @@ select:-webkit-autofill:focus {
   .jumbotron-icon {
     height: 100%;
   }
+
+  .jumbotron-text {
+    font-size: 64px;
+    font-weight: 700;
+
+    .subtext {
+      font-size: 48px;
+    }
+  }
+
+  @media (max-width: $mobile-md) {
+    height: 110px;
+
+    .jumbotron-text {
+      font-size: 30px;
+
+      .subtext {
+        font-size: 22px;
+      }
+    }
+  }
 }
 
 .accordion {
@@ -236,5 +263,12 @@ select:-webkit-autofill:focus {
 
   .accordion-body {
     padding: 20px 25px;
+  }
+
+  @media (max-width: $mobile-md) {
+    .accordion-item {
+      border: 0;
+      margin-bottom: 10px;
+    }
   }
 }

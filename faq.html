@@ -50,9 +50,9 @@
   <main>
     <div class="jumbotron-container" style="background-image: url('./images/faq/jumbotron-bg.png');">
       <div class="jumbotron-wrapper">
-        <h1 class="text-primary">
-          คำถาม<span class="h2 text-secondary">ที่พบบ่อย?</span>
-        </h1>
+        <p class="text-primary jumbotron-text">
+          คำถาม<span class="text-secondary subtext">ที่พบบ่อย?</span>
+        </p>
         <img class="jumbotron-icon" src="./images/faq/jumbotron-icon.svg" alt="jumbotron-icon">
       </div>
     </div>
@@ -548,20 +548,16 @@
   <footer w3-include-html="components/footer.html"></footer>
   <script src="libs/js/popper.min.js"></script>
   <script src="libs/js/bootstrap.min.js"></script>
+  <script src="libs/js/jquery.min.js"></script>
   <script src="libs/js/w3.js"></script>
   <script src="libs/js/aos.js"></script>
+  <script src="js/main.js"></script>
   <script>
     w3.includeHTML(setActive);
-    document.addEventListener("DOMContentLoaded", init);
-
-    function init() {
-      AOS.init({
-        once: true,
-      });
-    }
 
     function setActive() {
       document.getElementById('faq').classList.add('active');
+      document.getElementById('mobile-faq').classList.add('active');
     }
   </script>
 </body>

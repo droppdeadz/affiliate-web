@@ -1,12 +1,42 @@
 @import "variables";
 
+header {
+  margin-bottom: 70px;
+
+  @media (max-width: $mobile-md) {
+    margin-bottom: 75px;
+  }
+}
+
 .header-content {
+  position: fixed;
+  width: 100%;
   font-family: 'sukhumvit_set', sans-serif;
   color: $color_white;
   background-color: $color_primary;
+  z-index: 9999;
 
   .header-wrapper {
+    position: relative;
     padding: 0;
+    height: 70px;
+
+    @media (max-width: $mobile-md) {
+      padding: 15px 0;
+      justify-content: center;
+      height: 75px;
+    }
+  }
+
+  .navbar-wrapper {
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    align-items: center;
+
+    @media (max-width: $mobile-md) {
+      display: none;
+    }
   }
 
   .nav-item {
@@ -47,5 +77,85 @@
 
   img {
     width: 100%;
+  }
+
+  @media (max-width: $mobile-md) {
+    margin-right: 0;
+  }
+}
+
+.navbar-button {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  left: calc(-1 * var(--bs-gutter-x, .75rem));
+  background-color: $color_white;
+  padding: 10px 15px;
+  border-radius: 0px 50px 50px 0px;
+  box-shadow: 0px 4px 4px rgba(245, 131, 89, 0.75);
+
+  @media (max-width: $mobile-md) {
+    display: block;
+  }
+}
+
+.navbar-wrapper-mobile {
+  overflow: hidden;
+  position: fixed;
+  background-color: $color_white;
+  top: 75px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  opacity: 0;
+  transition: 0.5s;
+
+  .navbar-wrapper-mobile-list {
+    padding: 30px 12px 0 12px;
+    margin: 0;
+    list-style: none;
+
+    .navbar-mobile-item {
+      height: 40px;
+      margin-bottom: 40px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .navbar-mobile-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+
+      img {
+        margin-right: 16px;
+      }
+
+      span {
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 700;
+        color: $color_text_primary;
+      }
+
+      &.active {
+
+        span {
+          color: $color_primary_dark;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $mobile-md) {
+
+    &.show {
+      z-index: 9999;
+      height: 100%;
+      opacity: 1;
+    }
   }
 }
