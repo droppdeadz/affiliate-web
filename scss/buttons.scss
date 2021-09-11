@@ -1,17 +1,19 @@
+@import 'variables';
+
 .btn-register {
   color: #fff;
-  background-color: #9a44cf;
-  border-color: #9a44cf;
+  background-color: $color_purple;
+  border-color: $color_purple;
   border-radius: 50px;
   box-shadow: 5px 5px 10px rgba(89, 56, 137, 0.5);
-  width: 9.375rem;
-  height: 2.5rem;
+  width: 150px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
   font-weight: 700;
-  font-size: 1.125rem;
+  font-size: 18px;
 }
 
 .btn-register:hover {
@@ -49,24 +51,24 @@
 .btn-register.disabled,
 .btn-register:disabled {
   color: #fff;
-  background-color: #9a44cf;
-  border-color: #9a44cf;
+  background-color: $color_purple;
+  border-color: $color_purple;
 }
 
 .btn-outline-register {
-  color: #9a44cf;
+  color: $color_purple;
   background-color: #fff;
-  border-color: #9a44cf;
+  border-color: $color_purple;
   border-radius: 50px;
   box-shadow: 5px 5px 10px rgba(89, 56, 137, 0.5);
-  width: 9.375rem;
-  height: 2.5rem;
+  width: 150px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
   font-weight: 700;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
 }
 
 .btn-outline-register:hover {
@@ -104,6 +106,6 @@
 .btn-outline-register.disabled,
 .btn-outline-register:disabled {
   color: #fff;
-  background-color: #9a44cf;
-  border-color: #9a44cf;
+  background-color: $color_purple;
+  border-color: $color_purple;
 }

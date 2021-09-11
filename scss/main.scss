@@ -1,24 +1,27 @@
+@import 'variables';
 @import 'fonts';
 @import 'header';
 @import 'footer';
 @import 'buttons';
+@import 'faq';
 
 html {
   height: 100%;
   min-height: 100%;
-  font-size: $font-base-size + px;
+  font-size: 15px;
 }
 
 body {
   font-family: 'sukhumvit_set', sans-serif;
-  font-size: rem($font-base-size);
+  font-size: 15px;
   -webkit-font-smoothing: antialiased;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   word-wrap: break-word;
+
   @media only screen and (max-width: $mobile-md) {
-    font-size: rem(14);
+    font-size: 12px;
   }
 }
 
@@ -32,15 +35,46 @@ h2,
 h3,
 h4,
 h5,
+h6,
 strong,
 label,
 b {
-  font-weight: bold;
+  font-weight: 700;
+}
+
+p,
+span {
+  font-weight: 500;
+}
+
+h1, .h1 {
+  font-size: 64px;
+}
+
+h2, .h2 {
+  font-size: 48px;
+}
+
+h3, .h3 {
+  font-size: 40px;
+}
+
+h4, .h4 {
+  font-size: 36px;
+}
+
+h5, .h5 {
+  font-size: 24px;
+}
+
+h6, .h6 {
+  font-size: 15px;
 }
 
 *:focus {
   outline: none !important;
 }
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -71,3 +105,101 @@ select:-webkit-autofill:focus {
 // ::-webkit-scrollbar-thumb:hover {
 //   background: darken($scroll_bar_thumb, 5);
 // }
+
+@media (min-width: $mobile-md) {
+
+  .container,
+  .container-sm {
+    max-width: 540px
+  }
+}
+
+@media (min-width: $tablet-xs) {
+
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 720px
+  }
+}
+
+@media (min-width: $tablet-md) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 960px
+  }
+}
+
+@media (min-width: $desktop-xs) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1140px
+  }
+}
+
+@media (min-width: $desktop-md) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1320px
+  }
+}
+
+@media (min-width: $desktop-xl) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1560px
+  }
+}
+
+.text-small {
+  font-size: 14px;
+}
+
+.text-x-small {
+  font-size: 12px;
+}
+
+.text-primary {
+  color: $color_primary_dark !important;
+}
+
+.text-secondary {
+  color: $color_secondary !important;
+}
+
+.jumbotron-container {
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .jumbotron-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .jumbotron-icon {
+    height: 100%;
+  }
+}
+

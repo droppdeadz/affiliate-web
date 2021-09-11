@@ -6,11 +6,11 @@
   background-color: $color_primary;
 
   .header-wrapper {
-    padding: 1.25rem 0;
+    padding: 0;
   }
 
   .nav-item {
-    margin: 0 0.5rem;
+    margin: 0;
 
     &:first-child {
       margin-left: 0;
@@ -19,27 +19,31 @@
 
   .nav-link {
     color: transparentize($color_white, 0.25) !important;
+    width: 150px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 10px 10px;
 
     &:hover,
     &.active {
-      color: $color_white !important;
+      color: $color_primary_dark !important;
+      background-color: $color_white !important;
     }
   }
 
-  @media (min-width: $desktop-md) {
-    .nav-item {
-      margin: 0 1.25rem;
-
-      &:first-child {
-        margin-left: 0;
-      }
-    }
+  @media (min-width: $desktop-xl) {
+    width: 180px;
+    height: 70px;
   }
 }
 
 .navbar-brand {
-  max-width: 8.75rem;
-  margin-right: 1.375rem;
+  max-width: 138px;
+  min-width: 138px;
+  margin-right: 20px;
+  padding: 0;
 
   img {
     width: 100%;

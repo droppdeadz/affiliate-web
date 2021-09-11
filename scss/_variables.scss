@@ -1,16 +1,27 @@
-$font-base-size: 16;
-
 // color
 $color_primary: #FE976E;
+$color_primary_dark: #EE5B47;
+$color_secondary: #414b5a;
+$color_purple: #9945CF;
 $color_white: #ffffff;
 $color_black: #000000;
+$color_background: #ffffff;
+// color text
+$color_text_primary: #414B5A;
+$color_text_secondary: #FE976E;
+// color indicator
+$color_success: #41C16D;
+$color_warning: #FFC559;
+$color_danger: #EA3A31;
+// color gradient
+$color_gradient: linear-gradient(to bottom, #FFE598, #FE976E);
 
 // breakpoint
 $desktop-xl: 1680;
 $desktop-md: 1480;
 $desktop-xs: 1199;
 $tablet-xl: 1080;
-$tablet-md: 991;
+$tablet-md: 992;
 $tablet-xs: 768;
 $mobile-xl: 767;
 $mobile-md: 576;
