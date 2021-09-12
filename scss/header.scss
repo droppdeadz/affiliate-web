@@ -1,9 +1,7 @@
-@import "variables";
-
 header {
   margin-bottom: 70px;
 
-  @media (max-width: $mobile-md) {
+  @media (max-width: $tablet-xl) {
     margin-bottom: 75px;
   }
 }
