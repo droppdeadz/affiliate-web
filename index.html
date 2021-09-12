@@ -51,9 +51,9 @@
   <main>
     <div class="slick-slider">
       <div class="jumbotron-container jumbotron-container-xl"
-        style="background-image: url('./images/index/pc/section1/ภาพประกอบ1/png/background_01.png');">
+        style="background-image: url('./images/index/slide-1/background_01.png');">
         <div class="container">
-          <div class="index-first-slider-container">
+          <div class="index-slider-container first-slider">
             <div class="hero-text-container">
               <div class="hero-text">
                 <img src="./images/index/slide-1/slide-1_text.png" alt="slide-1-text">
@@ -62,6 +62,23 @@
             <div class="hero-image-container">
               <div class="hero-image">
                 <img src="./images/index/slide-1/slide-1_image.svg" alt="jumbotron-icon">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="jumbotron-container jumbotron-container-xl"
+        style="background-image: url('./images/index/slide-2/background_02.png');">
+        <div class="container">
+          <div class="index-slider-container second-slider">
+            <div class="hero-image-container">
+              <div class="hero-image">
+                <img src="./images/index/slide-2/model_02.png" alt="jumbotron-icon">
+              </div>
+            </div>
+            <div class="hero-text-container">
+              <div class="hero-text">
+                <img src="./images/index/slide-2/slide-text.svg" alt="slide-1-text">
               </div>
             </div>
           </div>
@@ -81,6 +98,8 @@
     w3.includeHTML();
     $(document).ready(function () {
       $(".slick-slider").slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
         arrows: false,
         dots: false,
         draggable: true,
