@@ -4,6 +4,15 @@
   justify-content: space-between;
   margin: 55px 0;
 
+  .tab-images-wrapper {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .faq-nav-items {
     flex: 1;
     font-size: 14px;
