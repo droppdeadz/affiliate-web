@@ -215,9 +215,6 @@
   align-items: center;
 
   .banner-images-container {
-    // display: flex;
-    // width: 632px;
-    // height: 429px;
   
     .banner-images {
       padding-top: 67.87%;
@@ -293,7 +290,6 @@
   }
 }
 
-
 .benefit-container {
   max-height: 578px;
   padding-top: 25px;
@@ -333,6 +329,139 @@
   }
 }
 
+.benefit-container-mobile {
+  padding: 16px 25px;
+}
+
+.benefit-wrapper {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
+
+  .benefit-logo {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #EEF1F2 15%, #F3F7F7 85.6%);
+
+    &.border-invest {
+      border-color: #C85E34;
+    }
+
+    &.border-salary {
+      border-color: #EE5B47;
+    }
+
+    &.border-income {
+      border-color: #FDAA89;
+    }
+
+    &.border-guarantee {
+      border-color: #FE976E;
+    }
+
+    &.border-member {
+      border-color: #9F3A2C;
+    }
+  }
+
+  .benefit-timeline-dots {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid;
+    border-radius: 50%;
+
+    &.no-border {
+
+      &:after {
+        border: 0;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -65px;
+      height: 60px;
+      border-right: 2px dashed;
+    }
+
+    &.border-invest {
+      border-color: #C85E34;
+    }
+
+    &.border-invest:after,
+    &.border-salary {
+      border-color: #EE5B47;
+    }
+
+    &.border-salary:after,
+    &.border-income {
+      border-color: #FDAA89;
+    }
+
+    &.border-income:after,
+    &.border-guarantee {
+      border-color: #FE976E;
+    }
+
+    &.border-guarantee:after,
+    &.border-member {
+      border-color: #9F3A2C;
+    }
+  }
+
+  .benefit-circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+
+    &.background-invest {
+      background-color: #C85E34;
+    }
+
+    &.background-salary {
+      background-color: #EE5B47;
+    }
+
+    &.background-income {
+      background-color: #FDAA89;
+    }
+
+    &.background-guarantee {
+      background-color: #FE976E;
+    }
+
+    &.background-member {
+      background-color: #9F3A2C;
+    }
+  }
+
+  .benefit-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.special-offer-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  background-image: url("../images/index/special-offer/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .join-us-container {
   display: flex;
