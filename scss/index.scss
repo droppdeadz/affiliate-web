@@ -715,36 +715,3 @@
     }
   }
 }
-
-.join-us-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px 0;
-
-  span {
-    font-size: 24px;
-    font-weight: 700;
-    margin-right: 25px;
-    color: $color_purple;
-  }
-
-  @media (max-width: $tablet-xl) {
-    span {
-      font-size: 18px;
-    }
-  }
-
-  @media (max-width: $mobile-md) {
-    text-align: center;
-    display: block;
-
-    span {
-      margin-right: 0;
-    }
-
-    a {
-      margin: auto;
-    }
-  }
-}
