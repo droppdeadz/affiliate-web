@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/slick.scss"],"names":[],"mappings":"AAAA,aACE,wBAGF,aACE,0BAGF,YACE,aACA,uBACA,SACA,UACA,gBAEA,mBACE,kBACA,WACA,YAIJ,0EAEE,cACA,SACA","file":"slick.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/slick.scss","../scss/_variables.scss"],"names":[],"mappings":"AAEA,aACE,wBAGF,aACE,0BAGF,YACE,aACA,uBACA,SACA,gBACA,UACA,gBAEA,eACE,aAEA,sBACE,yBACA,kBACA,iBCnBQ,KDoBR,aACA,YACA,WACA,YAIA,mCACE,iBChCQ,QDuChB,0EAEE,cACA,SACA","file":"slick.css"}

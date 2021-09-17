@@ -50,3 +50,11 @@ Thumbs.db
 
 
 .vscode
+
+.firebaserc
+
+firebase.json
+
+.firebase
+
+public/
