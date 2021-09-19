@@ -215,7 +215,7 @@
   align-items: center;
 
   .banner-images-container {
-  
+
     .banner-images {
       padding-top: 67.87%;
     }
@@ -236,7 +236,7 @@
     font-size: 24px;
     font-weight: 700;
   }
-  
+
   .banner-logo-title {
     font-size: 24px;
     font-weight: 500;
@@ -246,11 +246,11 @@
     display: flex;
     align-items: end;
     justify-content: center;
-  
+
     .banner-logo-images {
       max-width: 230px;
       margin-left: 10px;
-  
+
       img {
         width: 100%;
       }
@@ -258,8 +258,8 @@
   }
 
   @media (max-width: $tablet-xl) {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
     .banner-text-title {
       font-size: 22px;
@@ -270,7 +270,7 @@
       font-size: 18px;
       font-weight: 700;
     }
-    
+
     .banner-logo-title {
       font-size: 18px;
       font-weight: 500;
@@ -307,12 +307,12 @@
     margin: auto;
     height: 474px;
     width: 624px;
-  
+
     .benefit-image {
       padding-top: 75.96%;
     }
   }
-  
+
   @media (max-width: $tablet-xl) {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -323,7 +323,7 @@
       width: 100%;
     }
   }
-  
+
   @media (max-width: $mobile-md) {
     display: none;
   }
@@ -474,11 +474,12 @@
   .special-offer-title {
     font-size: 48px;
     font-weight: 700;
+    line-height: 1;
   }
 
   .special-offer-title-image {
     max-width: 600px;
-    margin: auto;
+    margin: 30px auto;
 
     img {
       width: 100%;
@@ -539,7 +540,7 @@
       .box-image {
         max-width: 45%;
         width: 100%;
-        
+
         img {
           width: 100%;
         }
@@ -686,7 +687,7 @@
   }
 
   .special-offer-box-container {
-    
+
     .special-offer-box-wrapper {
       max-width: 312px;
       margin: 20px auto;
@@ -713,5 +714,14 @@
     .special-offer-title {
       font-size: 24px;
     }
+  }
+}
+
+.index-slick-slider {
+
+  .slick-dots {
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
   }
 }

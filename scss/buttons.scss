@@ -17,15 +17,15 @@
 
 .btn-register:hover {
   color: #fff;
-  background-color: #8339b1;
-  border-color: #7e36ab;
+  // background-color: #8339b1;
+  // border-color: #7e36ab;
 }
 
 .btn-check:focus+.btn-register,
 .btn-register:focus {
   color: #fff;
-  background-color: #8339b1;
-  border-color: #7e36ab;
+  background-color: $color_purple;
+  border-color: $color_purple;
   box-shadow: 0 0 0 .25rem rgba(154, 68, 207, .5)
 }
 
@@ -35,8 +35,8 @@
 .btn-register:active,
 .show>.btn-register.dropdown-toggle {
   color: #fff;
-  background-color: #7e36ab;
-  border-color: #75339e;
+  background-color: $color_purple;
+  border-color: $color_purple;
 }
 
 .btn-check:active+.btn-register:focus,
@@ -71,16 +71,16 @@
 }
 
 .btn-outline-register:hover {
-  color: #fff;
-  background-color: #8339b1;
-  border-color: #7e36ab;
+  color: $color_purple;
+  // background-color: #8339b1;
+  // border-color: #7e36ab;
 }
 
 .btn-check:focus+.btn-outline-register,
 .btn-outline-register:focus {
-  color: #fff;
-  background-color: #8339b1;
-  border-color: #7e36ab;
+  color: $color_purple;
+  background-color: #fff;
+  border-color: $color_purple;
   box-shadow: 0 0 0 .25rem rgba(154, 68, 207, .5)
 }
 
@@ -89,9 +89,9 @@
 .btn-outline-register.active,
 .btn-outline-register:active,
 .show>.btn-outline-register.dropdown-toggle {
-  color: #fff;
-  background-color: #7e36ab;
-  border-color: #75339e;
+  color: $color_purple;
+  background-color: #fff;
+  border-color: $color_purple;
 }
 
 .btn-check:active+.btn-outline-register:focus,
@@ -107,4 +107,11 @@
   color: #fff;
   background-color: $color_purple;
   border-color: $color_purple;
+}
+
+.btn-lg {
+  width: 230px;
+  height: 60px;
+  padding: 0;
+  font-size: 18px;
 }

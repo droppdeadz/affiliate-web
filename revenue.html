@@ -50,21 +50,9 @@
   <header w3-include-html="components/header.html"></header>
   <main>
     <div class="jumbotron-container" style="background-image: url('./images/revenue/jumbotron-bg.png');">
-      <div class="jumbotron-wrapper">
-        <div class="jumbotron-text-align-wrapper">
-          <div class="d-flex align-items-baseline">
-            <span class="text-secondary jumbotron-smalltext">
-              โปรแกรมพันธมิตร
-            </span>
-            <div class="jumbotron-logo">
-              <img class="ms-md-3 ms-2" src="./images/logo-color.svg" alt="jumbotron-logo">
-            </div>
-          </div>
-          <div class="d-flex ms-auto">
-            <p class="text-secondary jumbotron-smalltext text-md-bold">
-              รับส่วนแบ่งรายได้<span class="text-primary jumbotron-text ms-md-3 ms-2">สูงสุดถึง 55%</span>
-            </p>
-          </div>
+      <div class="container jumbotron-wrapper">
+        <div class="image-ratio revenue-jumbotron-image">
+          <img src="./images/revenue/hero.svg" alt="revenue-hero">
         </div>
       </div>
     </div>
@@ -217,16 +205,19 @@
 
     $(document).ready(function () {
       $(".slick-slider").slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
         arrows: false,
         dots: false,
         draggable: false,
-        loops: false,
+        infinite: false,
         slidesToShow: 5,
         responsive: [{
             breakpoint: 768,
             settings: {
               arrows: false,
               centerMode: true,
+              infinite: true,
               slidesToShow: 1,
               centerPadding: "85px",
               dots: true,
@@ -236,9 +227,8 @@
             breakpoint: 992,
             settings: {
               arrows: false,
-              centerMode: true,
               slidesToShow: 3,
-              centerPadding: "40px",
+              // slidesToScroll: 3,
               dots: true,
             },
           },

@@ -416,3 +416,23 @@ select:-webkit-autofill:focus {
     }
   }
 }
+
+.slick-slider {
+
+  .slick-dots {
+    li {
+
+      button {
+        transition: 0.25s;
+      }
+
+      &.slick-active {
+        
+        button {
+          width: 100px;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+}
