@@ -161,4 +161,27 @@
       background: radial-gradient(53.85% 98.8% at 16.96% 52.48%, #E9B120 0%, #FFD66A 100%);
     }
   }
+
+  @media (max-width: $mobile-xs) {
+    .rank-normal-text {
+      font-size: 14px;
+    }
+    
+    .rank-price-text {
+      font-size: 20px;
+    }
+
+    .rank-percent-text {
+      font-size: 48px;
+    }
+
+    .rank-small-text {
+      font-size: 12px;
+    }
+
+    .rank-medium-text {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
 }

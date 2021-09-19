@@ -235,6 +235,7 @@
   .banner-text-subtitle {
     font-size: 24px;
     font-weight: 700;
+    margin-bottom: 15px;
   }
 
   .banner-logo-title {
@@ -264,6 +265,7 @@
     .banner-text-title {
       font-size: 22px;
       font-weight: 700;
+      margin-bottom: 10px;
     }
 
     .banner-text-subtitle {
@@ -282,9 +284,33 @@
   }
 
   @media (max-width: $mobile-md) {
+
+    .banner-text-title {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
     .banner-logo {
       .banner-logo-images {
         max-width: 170px;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-xs) {
+
+    .banner-text-title {
+      font-size: 18px;
+    }
+
+    .banner-logo-title {
+      font-weight: 700;
+    }
+
+    .banner-logo {
+      display: block;
+      .banner-logo-images {
+        margin: auto;
       }
     }
   }
@@ -336,6 +362,10 @@
   @media (max-width: $mobile-md) {
     display: block;
   }
+
+  @media (max-width: $mobile-xs) {
+    padding: 16px;
+  }
 }
 
 .benefit-wrapper {
@@ -373,6 +403,11 @@
     &.border-member {
       border-color: #9F3A2C;
     }
+
+    @media (max-width: $mobile-xs) {
+      width: 70px;
+      height: 70px;
+    }
   }
 
   .benefit-timeline-dots {
@@ -398,6 +433,10 @@
       bottom: -65px;
       height: 60px;
       border-right: 2px dashed;
+      @media (max-width: $mobile-xs) {
+        bottom: -55px;
+        height: 50px;
+      }
     }
 
     &.border-invest {
@@ -455,6 +494,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: $mobile-xs) {
+      max-width: 180px;
+
+      img {
+        width: 100%;
+      }
+    }
   }
 }
 

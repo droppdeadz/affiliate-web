@@ -390,7 +390,7 @@ select:-webkit-autofill:focus {
   align-items: center;
   padding: 25px 0;
 
-  span {
+  p {
     font-size: 24px;
     font-weight: 700;
     margin-right: 25px;
@@ -398,7 +398,7 @@ select:-webkit-autofill:focus {
   }
 
   @media (max-width: $tablet-xl) {
-    span {
+    p {
       font-size: 18px;
     }
   }
@@ -407,12 +407,19 @@ select:-webkit-autofill:focus {
     text-align: center;
     display: block;
 
-    span {
+    p {
       margin-right: 0;
+      margin-bottom: 10px;
     }
 
     a {
       margin: auto;
+    }
+  }
+
+  @media (max-width: $mobile-xs) {
+    p {
+      font-size: 15px;
     }
   }
 }
@@ -424,6 +431,7 @@ select:-webkit-autofill:focus {
 
       button {
         transition: 0.25s;
+        background: transparent;
       }
 
       &.slick-active {
@@ -431,6 +439,22 @@ select:-webkit-autofill:focus {
         button {
           width: 100px;
           border-radius: 50px;
+          background: $color_primary;
+        }
+      }
+
+      @media (max-width: $mobile-sm) {
+        button {
+          width: 10px;
+          height: 10px;
+          padding: 0;
+        }
+
+        &.slick-active {
+        
+          button {
+            width: 50px;
+          }
         }
       }
     }

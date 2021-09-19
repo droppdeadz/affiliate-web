@@ -188,7 +188,7 @@
       </div>
     </div>
     <div class="container-fluid subfooter-container">
-      <span>สร้างรายได้และรับแผนส่วนแบ่งที่ดีที่สุด</span>
+      <p>สร้างรายได้และรับแผนส่วนแบ่งที่ดีที่สุด</p>
       <a class="btn btn-register" href="#">เข้าร่วม</a>
     </div>
   </main>
@@ -213,6 +213,26 @@
         infinite: false,
         slidesToShow: 5,
         responsive: [{
+            breakpoint: 330,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              infinite: true,
+              slidesToShow: 1,
+              centerPadding: "40px",
+              dots: true,
+            },
+          },{
+            breakpoint: 360,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              infinite: true,
+              slidesToShow: 1,
+              centerPadding: "50px",
+              dots: true,
+            },
+          },{
             breakpoint: 768,
             settings: {
               arrows: false,
