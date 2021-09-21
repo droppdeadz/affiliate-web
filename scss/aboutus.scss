@@ -1,0 +1,106 @@
+@import 'variables';
+
+.aboutus-howto-background {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-image: url("../images/aboutus/bg_whatis_howto.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: $color_white;
+
+  .aboutus-howto-container {
+    max-width: 954px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .howto-title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 38px;
+    font-weight: 700;
+    
+    span {
+      font-weight: 700;
+    }
+  }
+
+  .howto-slider-container {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .howto-slider-items {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+
+    .howto-slider-items-images {
+      max-width: 200px;
+      margin: auto;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    p {
+      margin-top: 30px;
+    }
+  }
+
+  @media (max-width: $tablet-xl) {
+    .howto-title-wrapper {
+      font-size: 28px;
+    }
+
+    .howto-slider-items {
+      font-size: 20px;
+
+      .howto-slider-items-images {
+        max-width: 150px;
+      }
+
+      p {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-md) {
+
+    .howto-title-wrapper {
+      font-size: 14px;
+
+      img {
+        max-width: 150px;
+        width: 100%;
+      }
+    }
+
+    .howto-slider-items {
+      font-size: 18px;
+      opacity: 0.5;
+      transition: 0.125s;
+
+      &.slick-current,
+      &.slick-active {
+        opacity: 1;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-xs) {
+
+    .howto-title-wrapper {
+      font-size: 14px;
+
+      img {
+        max-width: 100px;
+      }
+    }
+  }
+}
