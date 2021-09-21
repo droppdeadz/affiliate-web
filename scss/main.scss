@@ -461,3 +461,19 @@ select:-webkit-autofill:focus {
     }
   }
 }
+
+.line-support-float {
+  position: fixed;
+  max-width: 50px;
+  bottom: 30px;
+  right: 30px;
+
+  img {
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-md) {
+    bottom: 15px;
+    right: 15px;
+  }
+}
