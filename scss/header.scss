@@ -130,8 +130,17 @@ header {
       align-items: center;
       text-decoration: none;
 
-      img {
+      .navbar-icon {
+        display: flex;
+        justify-content: center;
+        width: 35px;
         margin-right: 16px;
+      }
+      
+      img {
+        max-width: 35px;
+        max-height: 35px;
+        object-fit: contain;
       }
 
       span {

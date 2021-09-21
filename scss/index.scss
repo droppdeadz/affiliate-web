@@ -404,6 +404,14 @@
       border-color: #9F3A2C;
     }
 
+    @media (max-width: $mobile-md) {
+
+      img {
+        max-width: 40px;
+        width: 100%;
+      }
+    }
+
     @media (max-width: $mobile-xs) {
       width: 70px;
       height: 70px;
