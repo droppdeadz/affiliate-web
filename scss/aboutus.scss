@@ -1,5 +1,179 @@
 @import 'variables';
 
+.aboutus-jumbotron-background {
+  padding-top: 27.34%;
+
+  &.mobile {
+    padding-top: 42.13%;
+    display: none;
+  }
+
+  @media (max-width: $mobile-md) {
+    display: none;
+
+    &.mobile {
+      display: block;
+    }
+  }
+}
+
+.aboutus-description-background {
+  background-image: url("../images/aboutus/bg_description.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: $color_white;
+
+  .aboutus-description-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .aboutus-description-title {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-size: 36px;
+    margin-bottom: 15px;
+
+    p {
+      font-weight: 700;
+    }
+  }
+
+  @media (max-width: $tablet-xl) {
+    .aboutus-description-container {
+      padding-top: 75px;
+      padding-bottom: 75px;
+      font-size: 18px;
+    }
+
+    .aboutus-description-title {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: $mobile-md) {
+    .aboutus-description-container {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      font-size: 14px;
+    }
+
+    .aboutus-description-title {
+      font-size: 16px;
+
+      img {
+        max-width: 110px;
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-xs) {
+
+    .aboutus-description-title {
+      display: block;
+      
+      img {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.aboutus-whyus-container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  .aboutus-whyus-title {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+
+    p {
+      font-weight: 700;
+    }
+
+    img {
+      margin-left: 15px;
+    }
+  }
+
+  .aboutus-whyus-items {
+    text-align: center;
+
+    .aboutus-whyus-items-images {
+      margin: auto;
+      max-width: 250px;
+      margin-bottom: 30px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .aboutus-whyus-items-text {
+      font-size: 24px;
+    }
+
+    .aboutus-whyus-items-subtext {
+      font-size: 15px;
+      opacity: 0.5;
+    }
+  }
+
+  @media (max-width: $tablet-xl) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $mobile-md) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .aboutus-whyus-title {
+      font-size: 18px;
+      display: block;
+      text-align: center;
+
+      img {
+        max-width: 150px;
+        width: 100%;
+      }
+    }
+
+    .aboutus-whyus-items {
+      margin-bottom: 25px;
+
+      .aboutus-whyus-items-images {
+        margin-bottom: 15px;
+      }
+
+      .aboutus-whyus-items-text {
+        font-size: 18px;
+      }
+
+      .aboutus-whyus-items-subtext {
+        font-size: 13px;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-xs) {
+    .aboutus-whyus-items {
+
+      .aboutus-whyus-items-images {
+        max-width: 200px;
+      }
+    }
+  }
+}
+
 .aboutus-howto-background {
   padding-top: 50px;
   padding-bottom: 20px;
