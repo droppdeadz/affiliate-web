@@ -26,7 +26,7 @@
   color: #fff;
   background-color: $color_purple;
   border-color: $color_purple;
-  box-shadow: 0 0 0 .25rem rgba(154, 68, 207, .5)
+  box-shadow: none
 }
 
 .btn-check:active+.btn-register,
@@ -44,7 +44,7 @@
 .btn-register.active:focus,
 .btn-register:active:focus,
 .show>.btn-register.dropdown-toggle:focus {
-  box-shadow: 0 0 0 .25rem rgba(154, 68, 207, .5)
+  box-shadow: none
 }
 
 .btn-register.disabled,
@@ -81,7 +81,7 @@
   color: $color_purple;
   background-color: #fff;
   border-color: $color_purple;
-  box-shadow: 0 0 0 .25rem rgba(154, 68, 207, .5)
+  box-shadow: none
 }
 
 .btn-check:active+.btn-outline-register,
@@ -99,7 +99,7 @@
 .btn-outline-register.active:focus,
 .btn-outline-register:active:focus,
 .show>.btn-outline-register.dropdown-toggle:focus {
-  box-shadow: 0 0 0 .25rem rgba(154, 68, 207, .5)
+  box-shadow: none
 }
 
 .btn-outline-register.disabled,
@@ -120,4 +120,18 @@
     width: 165px;
     height: 44px;
   }
+}
+
+.btn {
+  transition: 0.5s;
+}
+
+.btn:hover {
+  transform: scale(1.075);
+}
+
+.btn.active,
+.btn:active,
+.btn:checked {
+  transform: scale(0.875);
 }
