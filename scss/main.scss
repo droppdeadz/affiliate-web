@@ -285,6 +285,10 @@ select:-webkit-autofill:focus {
     }
   }
 
+  .index-slider-mobile {
+    padding-top: 126.13%;
+  }
+
   @media (max-width: $tablet-xl) {
     &.jumbotron-container-xl {
       max-height: 350px !important;
@@ -305,11 +309,14 @@ select:-webkit-autofill:focus {
   }
 
   @media (max-width: $mobile-md) {
-    height: 110px;
-
+    height: auto !important;
+    
     &.jumbotron-container-xl {
-      max-height: 150px !important;
-      height: 150px !important;
+      max-height: none !important;
+      height: auto !important;
+      background: none !important;
+      // max-height: 150px !important;
+      // height: 150px !important;
     }
 
     .jumbotron-text {

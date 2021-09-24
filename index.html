@@ -52,7 +52,7 @@
     <div class="slick-slider index-slick-slider">
       <div class="jumbotron-container jumbotron-container-xl"
         style="background-image: url('./images/index/slide-1/background_01.png');">
-        <div class="container">
+        <div class="container d-md-block d-none">
           <div class="index-slider-container first-slider">
             <div class="hero-text-container">
               <div class="image-ratio hero-text">
@@ -66,10 +66,13 @@
             </div>
           </div>
         </div>
+        <div class="image-ratio index-slider-mobile">
+          <img src="./images/index/banner/landing_mb01.png" alt="index-banner-1-mobile">
+        </div>
       </div>
       <div class="jumbotron-container jumbotron-container-xl"
         style="background-image: url('./images/index/slide-2/background_02.png');">
-        <div class="container">
+        <div class="container d-md-block d-none">
           <div class="index-slider-container second-slider">
             <div class="hero-image-container">
               <div class="image-ratio hero-image">
@@ -83,10 +86,13 @@
             </div>
           </div>
         </div>
+        <div class="image-ratio index-slider-mobile">
+          <img src="./images/index/banner/landing_mb02.png" alt="index-banner-2-mobile">
+        </div>
       </div>
       <div class="jumbotron-container jumbotron-container-xl"
         style="background-image: url('./images/index/slide-3/background_03.png');">
-        <div class="container">
+        <div class="container d-md-block d-none">
           <div class="index-slider-container third-slider">
             <div class="hero-image-container">
               <div class="image-ratio hero-image">
@@ -95,10 +101,13 @@
             </div>
           </div>
         </div>
+        <div class="image-ratio index-slider-mobile">
+          <img src="./images/index/banner/landing_mb03.png" alt="index-banner-3-mobile">
+        </div>
       </div>
       <div class="jumbotron-container jumbotron-container-xl"
         style="background-image: url('./images/index/slide-3/background_03.png');">
-        <div class="container">
+        <div class="container d-md-block d-none">
           <div class="index-slider-container fourth-slider">
             <div class="hero-image-container">
               <div class="image-ratio hero-image">
@@ -111,6 +120,9 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="image-ratio index-slider-mobile">
+          <img src="./images/index/banner/landing_mb04.png" alt="index-banner-4-mobile">
         </div>
       </div>
     </div>
@@ -499,8 +511,8 @@
     w3.includeHTML();
     $(document).ready(function () {
       $(".slick-slider").slick({
-        autoplay: true,
-        autoplaySpeed: 3000,
+        // autoplay: true,
+        // autoplaySpeed: 3000,
         arrows: false,
         dots: true,
         draggable: true,
