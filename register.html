@@ -48,7 +48,104 @@
 
 <body>
   <main>
-    <div class="landing-page-background"></div>
+    <div class="landing-page-background">
+      <div class="landing-page-container">
+        <div class="landing-page-header">
+          <img src="./images/logo.svg" alt="landing-page-logo" data-aos="fade-down" data-aos-delay="250">
+          <a href="#" class="landing-page-flag" data-aos="fade-down" data-aos-delay="250">
+            <img src="./images/login-register/en_flag.png" alt="landing-flag-logo">
+          </a>
+        </div>
+        <div class="landing-page-body">
+          <div class="landing-page-body-image d-none d-lg-block" data-aos="fade-down" data-aos-delay="350">
+            <img src="./images/login-register/bn_register.png" alt="landing-page-login-image">
+          </div>
+          <div class="landing-page-body-form" data-aos="fade-down" data-aos-delay="350">
+            <form method="POST" class="landing-form-wrapper register-form">
+              <h1>สมัครสมาชิก</h1>
+              <div class="landing-stepper-wrapper">
+                <div data-stepper-name="information" class="landing-stepper-items active">
+                  <div class="landing-stepper-items-stand">
+                    <span>1</span>
+                  </div>
+                </div>
+                <div class="landing-stepper-line"></div>
+                <div data-stepper-name="account" class="landing-stepper-items">
+                  <div class="landing-stepper-items-stand">
+                    <span>2</span>
+                  </div>
+                </div>
+              </div>
+              <div id="information" data-tab-name="information" class="register-form-wrapper show">
+                <div class="landing-form-group information">
+                  <div class="form-group-custom input-group mb-3">
+                    <div class="input-group-prepend">
+                      <img src="./images/login-register/user_icon.png" alt="landing-form-login-username">
+                    </div>
+                    <input type="tel" class="form-control" name="username" placeholder="กรอกหมายเลขโทรศัพท์" required>
+                  </div>
+                  <div class="form-group-custom input-group mb-3">
+                    <div class="input-group-prepend">
+                      <img src="./images/login-register/user_icon.png" alt="landing-form-login-nickname">
+                    </div>
+                    <input type="tel" class="form-control" name="nickname" placeholder="ชื่อเล่น" required>
+                  </div>
+                  <div class="form-group-custom input-group mb-3">
+                    <div class="input-group-prepend">
+                      <img src="./images/login-register/password_icon.png" alt="landing-form-login-password">
+                    </div>
+                    <input type="password" class="form-control" name="password" placeholder="รหัสผ่าน" required>
+                  </div>
+                  <div class="form-group-custom input-group">
+                    <div class="input-group-prepend">
+                      <img src="./images/login-register/password_icon.png" alt="landing-form-login-confirm-password">
+                    </div>
+                    <input type="password" class="form-control" name="confirm_password" placeholder="ยืนยันรหัสผ่าน" required>
+                  </div>
+                </div>
+                <div>
+                  <button id="next-button" type="button" class="btn btn-landing-page btn-register" disabled>ต่อไป</button>
+                  <div class="landing-page-register">
+                    มีบัญชีผู้ใช้แล้ว <a href="login.html">เข้าสู่ระบบ</a>
+                  </div>
+                </div>
+              </div>
+              <div id="account" data-tab-name="account" class="register-form-wrapper">
+                <div class="landing-form-group account">
+                  <div class="form-group-custom input-group mb-3">
+                    <div class="input-group-prepend">
+                      <img src="./images/login-register/bank_icon.png" alt="landing-form-register-account-bank">
+                    </div>
+                    <input type="text" class="form-control" name="account_bank" placeholder="ธนาคาร" required>
+                  </div>
+                  <div class="form-group-custom input-group mb-3">
+                    <div class="input-group-prepend">
+                      <img src="./images/login-register/account_icon.png" alt="landing-form-register-account-number">
+                    </div>
+                    <input type="tel" class="form-control" name="account_number" placeholder="หมายเลขบัญชี" required>
+                  </div>
+                  <div class="form-group-custom input-group">
+                    <div class="input-group-prepend">
+                      <img src="./images/login-register/account_icon.png" alt="landing-form-register-account-name">
+                    </div>
+                    <input type="text" class="form-control" name="account_name" placeholder="ชื่อบัญชี" required>
+                  </div>
+                </div>
+                <div>
+                  <button id="register-button" type="submit" class="btn btn-landing-page btn-register" disabled>เข้าร่วม</button>
+                  <div class="landing-page-register">
+                    มีบัญชีผู้ใช้แล้ว <a href="login.html">เข้าสู่ระบบ</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="landing-page-contact">
+              หากพบปัญหาในการเข้าสู่ระบบ <a href="#">"คลิกที่นี่"</a> เพื่อติดต่อฝ่ายบริการ
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <script src="libs/js/popper.min.js"></script>
   <script src="libs/js/bootstrap.min.js"></script>
@@ -59,6 +156,153 @@
   <script src="js/main.js"></script>
   <script>
     w3.includeHTML();
+    $(document).ready(function () {
+      const formInput = $('.landing-form-group').find('input');
+      const $informationTab = $('#information');
+      const $accountTab = $('#account');
+      const $nextButton = $('#next-button');
+      const $registerButton = $('#register-button');
+      const informationFormInput = $('#information .landing-form-group').find('input');
+      const accountFormInput = $('#account .landing-form-group').find('input');
+
+      let informationFormLists = [
+        {
+          name: 'username',
+          value: false
+        },
+        {
+          name: 'nickname',
+          value: false
+        },
+        {
+          name: 'password',
+          value: false
+        },
+        {
+          name: 'confirm_password',
+          value: false
+        },
+      ];
+      let accountFormLists = [
+        {
+          name: 'account_bank',
+          value: false
+        },
+        {
+          name: 'account_number',
+          value: false
+        },
+        {
+          name: 'account_name',
+          value: false
+        },
+      ];
+
+      let formInformationValidate = [];
+      let formAccountValidate = [];
+
+      formInput.map((idx, dom) => {
+        const $input = $(dom);
+
+        $input.focus(function () {
+          const $parents = $(this).parents('.form-group-custom');
+          $parents.addClass('active');
+        });
+
+        $input.focusout(function () {
+          const $parents = $(this).parents('.form-group-custom');
+          $parents.removeClass('active');
+        });
+      });
+
+      informationFormInput.map((idx, dom) => {
+        const $input = $(dom);
+
+        $input.keyup(function () {
+          const value = $(this).val();
+          const name = $(this).attr('name');
+
+          $nextButton.prop('disabled', true);
+
+          informationFormLists.map((formValue, idx) => {
+            if (formValue.name === name) {
+              if (value) {
+                formValue.value = true;
+              } else {
+                formValue.value = false;
+              }
+            }
+          });
+
+          formInformationValidate = informationFormLists.filter((formValue, idx) => {
+            return formValue.value;
+          });
+
+          if (formInformationValidate.length === informationFormLists.length) {
+            $nextButton.prop('disabled', false);
+          }
+        });
+      });
+
+      accountFormInput.map((idx, dom) => {
+        const $input = $(dom);
+
+        $input.keyup(function () {
+          const value = $(this).val();
+          const name = $(this).attr('name');
+
+          $registerButton.prop('disabled', true);
+
+          accountFormLists.map((formValue, idx) => {
+            if (formValue.name === name) {
+              if (value) {
+                formValue.value = true;
+              } else {
+                formValue.value = false;
+              }
+            }
+          });
+
+          formAccountValidate = accountFormLists.filter((formValue, idx) => {
+            return formValue.value;
+          });
+
+          if (formAccountValidate.length === accountFormLists.length) {
+            $registerButton.prop('disabled', false);
+          }
+        });
+      });
+    
+      $('.landing-stepper-items').click(function () {
+        const stepperName = $(this).data('stepper-name');
+
+        if (stepperName === 'information') {
+          $('.landing-stepper-items').removeClass('active');
+          $(this).addClass('active');
+          $accountTab.removeClass('show');
+          $informationTab.addClass('show');
+        }
+
+        if (stepperName === 'account') {
+          if (formInformationValidate.length === informationFormLists.length) {
+            $('.landing-stepper-items').removeClass('active');
+            $(this).addClass('active');
+            $informationTab.removeClass('show');
+            $accountTab.addClass('show');
+          }
+        }
+      });
+
+      $nextButton.click(function () {
+        const stepperTarget = $(".landing-stepper-items[data-stepper-name='account']");
+        if (formInformationValidate.length === informationFormLists.length) {
+          $('.landing-stepper-items').removeClass('active');
+          stepperTarget.addClass('active');
+          $informationTab.removeClass('show');
+          $accountTab.addClass('show');
+        }
+      });
+    });
   </script>
 </body>
 
