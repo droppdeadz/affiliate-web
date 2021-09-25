@@ -9,6 +9,7 @@
 @import 'website';
 @import 'revenue';
 @import 'faq';
+@import 'landing';
 
 html {
   height: 100%;
@@ -122,6 +123,14 @@ select:-webkit-autofill:focus {
 
 ::-webkit-scrollbar-thumb:hover {
   background: darken($color_primary_dark, 5);
+}
+
+a {
+  color: $color_purple;
+
+  &:hover {
+    color: $color_purple;
+  }
 }
 
 @media (min-width: $mobile-md) {
@@ -484,4 +493,8 @@ select:-webkit-autofill:focus {
     bottom: 15px;
     right: 15px;
   }
+}
+
+.text-dark {
+  color: $color_text_primary !important;
 }
