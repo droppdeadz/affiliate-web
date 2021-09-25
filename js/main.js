@@ -1,6 +1,21 @@
 $(document).ready(function () {
   const body = $("body");
-  
+  const urlParams = new URLSearchParams(window.location.search);
+  const myParam = urlParams.get("showpopup");
+
+  if (myParam) {
+    setTimeout(() => {
+      $("#registerSuccessModal").modal("show");
+    }, 250);
+  }
+
+  setTimeout(() => {
+    $("#registerSuccessModal").on("hidden.bs.modal", function () {
+      window.history.pushState({}, document.title, window.location.pathname);
+    });
+  }, 250);
+
+
   var script = {
     navbarToggle: function () {
       setTimeout(() => {
