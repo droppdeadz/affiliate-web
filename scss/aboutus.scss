@@ -63,6 +63,7 @@
     }
 
     .aboutus-description-title {
+      display: block;
       font-size: 16px;
 
       img {
@@ -75,7 +76,6 @@
   @media (max-width: $mobile-xs) {
 
     .aboutus-description-title {
-      display: block;
       
       img {
         margin-bottom: 15px;

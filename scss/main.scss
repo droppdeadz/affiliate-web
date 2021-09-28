@@ -328,6 +328,12 @@ a {
       // height: 150px !important;
     }
 
+    &.revenue-jumbotron,
+    &.faq-jumbotron {
+      max-height: 110px !important;
+      height: 110px !important;
+    }
+
     .jumbotron-text {
       font-size: 30px;
     }
@@ -481,7 +487,7 @@ a {
 
 .line-support-float {
   position: fixed;
-  max-width: 50px;
+  max-width: 60px;
   bottom: 30px;
   right: 30px;
 

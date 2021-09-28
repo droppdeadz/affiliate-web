@@ -49,10 +49,11 @@
 <body>
   <header w3-include-html="components/header.html"></header>
   <main>
-    <div class="jumbotron-container" style="background-image: url('./images/revenue/jumbotron-bg.png');" data-aos="fade-down" data-aos-delay="100">
+    <div class="jumbotron-container revenue-jumbotron" style="background-image: url('./images/revenue/jumbotron-bg.png');" data-aos="fade-down" data-aos-delay="100">
       <div class="container jumbotron-wrapper">
         <div class="image-ratio revenue-jumbotron-image">
-          <img src="./images/revenue/hero.svg" alt="revenue-hero">
+          <img src="./images/revenue/hero.svg" class="d-none d-md-block" alt="revenue-hero">
+          <img src="./images/revenue/hero-mobile.png" class="d-md-none d-block" alt="revenue-hero-mobile">
         </div>
       </div>
     </div>
@@ -195,7 +196,7 @@
     </div>
     <div class="container-fluid subfooter-container" data-aos="fade-down" data-aos-delay="250">
       <p>สร้างรายได้และรับแผนส่วนแบ่งที่ดีที่สุด</p>
-      <a class="btn btn-lg btn-register" href="#">เข้าร่วม</a>
+      <a class="btn btn-lg btn-register" href="register.html">เข้าร่วม</a>
     </div>
   </main>
   <footer w3-include-html="components/footer.html"></footer>

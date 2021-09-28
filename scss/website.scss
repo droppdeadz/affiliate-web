@@ -260,6 +260,7 @@
   .website-tab-items {
     margin: 0 20px;
     max-width: 60px;
+    text-align: center;
   }
 
   .website-tab-logo {
@@ -289,4 +290,8 @@
 
 .website-tab-trigger {
   cursor: pointer;
+
+  &.active {
+    color: $color_primary_dark;
+  }
 }
