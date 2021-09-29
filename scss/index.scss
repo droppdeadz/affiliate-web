@@ -668,7 +668,7 @@
       width: 100%;
       border: 2px solid $color_text_primary;
       border-radius: 10px;
-      padding: 10px;
+      padding: 15px;
 
       .info-row {
         position: relative;
@@ -786,5 +786,16 @@
     .slick-dots {
       bottom: 15px;
     }
+  }
+}
+
+.limit-price-position {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+
+  @media (max-width: $tablet-xl) {
+    transform: translateX(-50%) translateY(50%);
   }
 }
