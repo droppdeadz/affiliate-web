@@ -28,11 +28,20 @@ $(document).ready(function () {
         });
       }, 200);
     },
+    refreshAOS: function () {
+      document.onreadystatechange = function () {
+        console.log(document.readyState);
+        if (document.readyState == "complete") {
+          AOS.refresh();
+        }
+      }
+    },
     init: function () {
       AOS.init({
         once: true,
       });
       this.navbarToggle();
+      this.refreshAOS();
     },
   };
   script.init();
